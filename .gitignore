@@ -1,0 +1,27 @@
+# Maven build output
+/target/
+
+# Logs
+*.log
+logs/
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+
+# VSCode project settings
+.vscode/
+
+# Mac OS system files
+.DS_Store
+
+# Report files
+/reports/
+/test-output/
+
+# Selenium screenshots or temp data
+/screenshots/
+temp/
+
+# Credentials or config files (optional)
+config.properties
