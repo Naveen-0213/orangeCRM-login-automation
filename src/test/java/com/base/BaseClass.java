@@ -38,7 +38,8 @@ public class BaseClass {
 	
 	@BeforeMethod
 	public void setup(Method method) throws IOException, InterruptedException {
-		log.info("\"===== Test Start: \" + method.getName() + \" =====\"");
+		//log.info("\"===== Test Start: \" + method.getName() + \" =====\"");
+		log.info("==== Test Start:" + method.getName() +" =====");
 		
 		//getting config.properties
 		prop=new Properties();

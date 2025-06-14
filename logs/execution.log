@@ -1,22 +1,49 @@
-2025-06-07 23:40:28 INFO  BaseClass:41 - "===== Test Start: " + method.getName() + " ====="
-2025-06-07 23:40:35 INFO  BaseClass:71 - Launched Url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2025-06-07 23:40:38 INFO  LoginTest:26 - Starting login test for User: Admin
-2025-06-07 23:40:39 INFO  LoginTest:31 - Entered Username
-2025-06-07 23:40:39 INFO  LoginTest:35 - Entered Password
-2025-06-07 23:40:40 INFO  LoginTest:39 - Clicked on Login Button
-2025-06-07 23:40:40 INFO  LoginTest:47 - Login Success as DashBorad is visible
-2025-06-07 23:40:40 INFO  BaseClass:84 - Test passed...!
-2025-06-07 23:40:45 INFO  BaseClass:93 - Test End
-2025-06-07 23:40:45 INFO  BaseClass:41 - "===== Test Start: " + method.getName() + " ====="
-2025-06-07 23:40:47 INFO  BaseClass:71 - Launched Url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2025-06-07 23:40:50 INFO  LoginTest:26 - Starting login test for User: Admin
-2025-06-07 23:40:52 ERROR BaseClass:80 - Test case Failed: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='username']"}
-  (Session info: chrome=137.0.7151.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8b69436ede234e468edd01aec89df34a, findElement {value=//input[@name='username'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: /var/folders/tr/nq2fpb0x2b5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54535/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b69436ede234e468edd01aec89df34a
-2025-06-07 23:40:57 INFO  BaseClass:93 - Test End
+2025-06-14 13:07:11 INFO  BaseClass:42 - ==== Test Start:testLogin =====
+2025-06-14 13:07:16 INFO  BaseClass:72 - Launched Url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-14 13:07:19 INFO  LoginTest:24 - Starting login test for User: Admin
+2025-06-14 13:07:19 INFO  LoginTest:29 - Entered Username
+2025-06-14 13:07:19 INFO  LoginTest:33 - Entered Password
+2025-06-14 13:07:20 INFO  LoginTest:37 - Clicked on Login Button
+2025-06-14 13:07:20 INFO  HomePage:46 - Dashboard Menu Identified. Hence Landed in Home Page
+2025-06-14 13:07:20 INFO  HomePage:69 - Link in Home Page is: https://www.orangehrm.com/
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/admin/viewAdminModule
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/pim/viewPimModule
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/leave/viewLeaveModule
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/time/viewTimeModule
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/recruitment/viewRecruitmentModule
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/pim/viewMyDetails
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/performance/viewPerformanceModule
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/dashboard/index
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/directory/viewDirectory
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/maintenance/viewMaintenanceModule
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/claim/viewClaimModule
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: /web/index.php/buzz/viewBuzz
+2025-06-14 13:07:22 INFO  HomePage:69 - Link in Home Page is: https://orangehrm.com/open-source/upgrade-to-advanced
+2025-06-14 13:07:24 INFO  HomePage:69 - Link in Home Page is: http://www.orangehrm.com
+2025-06-14 13:07:24 INFO  HomePage:86 - Valid Urls in home page: https://www.orangehrm.com/ - OK (HTTP 200)
+2025-06-14 13:07:24 INFO  HomePage:86 - Valid Urls in home page: https://orangehrm.com/open-source/upgrade-to-advanced - OK (HTTP 200)
+2025-06-14 13:07:24 INFO  HomePage:86 - Valid Urls in home page: http://www.orangehrm.com - OK (HTTP 301)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/admin/viewAdminModule - Broken (no protocol: /web/index.php/admin/viewAdminModule)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/pim/viewPimModule - Broken (no protocol: /web/index.php/pim/viewPimModule)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/leave/viewLeaveModule - Broken (no protocol: /web/index.php/leave/viewLeaveModule)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/time/viewTimeModule - Broken (no protocol: /web/index.php/time/viewTimeModule)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/recruitment/viewRecruitmentModule - Broken (no protocol: /web/index.php/recruitment/viewRecruitmentModule)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/pim/viewMyDetails - Broken (no protocol: /web/index.php/pim/viewMyDetails)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/performance/viewPerformanceModule - Broken (no protocol: /web/index.php/performance/viewPerformanceModule)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/dashboard/index - Broken (no protocol: /web/index.php/dashboard/index)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/directory/viewDirectory - Broken (no protocol: /web/index.php/directory/viewDirectory)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/maintenance/viewMaintenanceModule - Broken (no protocol: /web/index.php/maintenance/viewMaintenanceModule)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/claim/viewClaimModule - Broken (no protocol: /web/index.php/claim/viewClaimModule)
+2025-06-14 13:07:24 INFO  HomePage:95 - Broken Links in Home Page: /web/index.php/buzz/viewBuzz - Broken (no protocol: /web/index.php/buzz/viewBuzz)
+2025-06-14 13:07:24 INFO  BaseClass:85 - Test passed...!
+2025-06-14 13:07:29 INFO  BaseClass:94 - Test End
+2025-06-14 13:07:29 INFO  BaseClass:42 - ==== Test Start:testLogin =====
+2025-06-14 13:07:33 INFO  BaseClass:72 - Launched Url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-14 13:07:36 INFO  LoginTest:24 - Starting login test for User: Admin
+2025-06-14 13:07:36 INFO  LoginTest:29 - Entered Username
+2025-06-14 13:07:36 INFO  LoginTest:33 - Entered Password
+2025-06-14 13:07:36 INFO  LoginTest:37 - Clicked on Login Button
+2025-06-14 13:07:41 INFO  HomePage:51 - Login Test Failed - from log
+2025-06-14 13:07:41 ERROR BaseClass:81 - Test case Failed: java.lang.AssertionError: The following asserts failed:
+	Login Failed
+2025-06-14 13:07:46 INFO  BaseClass:94 - Test End
