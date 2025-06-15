@@ -40,7 +40,7 @@ public class LoginTest extends BaseClass{
 		HomePage homePage=new HomePage(driver, test);
 		homePage.checkDashboardMenuVisibility();
 		homePage.checkAllLinks();
-		
+		homePage.gotoEmployeeDistributionbyLocationChart();
 		
 
 		

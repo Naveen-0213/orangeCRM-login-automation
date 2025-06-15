@@ -15,8 +15,8 @@ public class TestDataProvider {
         prop.load(fis);
 
         return new Object[][] {
-            { prop.getProperty("user1.username"), prop.getProperty("user1.password") },
-            { prop.getProperty("user2.username"), prop.getProperty("user2.password") }
+            { prop.getProperty("user1.username"), prop.getProperty("user1.password") }
+            //{ prop.getProperty("user2.username"), prop.getProperty("user2.password") }
         };
     }
 

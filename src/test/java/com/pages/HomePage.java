@@ -5,6 +5,7 @@ package com.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -20,7 +21,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
-public class HomePage {
+public class HomePage extends ProjectSpecifiMethods {
 
     WebDriver driver;
     ExplicitWaitUtils util;
@@ -28,6 +29,7 @@ public class HomePage {
     //SoftAssert ass=new SoftAssert();
     protected ExtentTest test;
     SoftAssert ass;
+    
 
     public HomePage(WebDriver driver, ExtentTest test) {
         this.driver = driver;
@@ -38,6 +40,10 @@ public class HomePage {
 
     private By dashboard = By.xpath("//a[@class='oxd-main-menu-item active']");
     private By allLinks = By.tagName("a");
+    //private By canvas=By.xpath("//div[@class='oxd-pie-chart']//canvas[@id='4PdeqCB7']");
+    
+    
+    
 
     public void checkDashboardMenuVisibility() {
         try {
@@ -123,5 +129,26 @@ public class HomePage {
 
     }
 
+    
+    public void gotoEmployeeDistributionbyLocationChart() {
+    	
+    	WebElement title=driver.findElement(By.xpath("//p[text()=\"Employee Distribution by Location\"]"));
+    	//WebElement canvasEle=driver.findElement(canvas);
+    	WebElement assignLeaveButton=driver.findElement(By.xpath("//button[@class='oxd-icon-button orangehrm-quick-launch-icon']"));
+    	
+      	Actions action=new Actions(driver);
+        action.moveToElement(assignLeaveButton).build().perform();
+        takeSnapShot(driver, "./ScreenShots/canvasSS.png");
+        
+        util.waitForElementVisibleOf(title, 5);
+    	jsScrollIntoView(driver, title);
+    	takeSnapShot(driver, "./ScreenShots/scroll.png");
+    	
+    	
+    	
+    	
+    	
+    }
+    
 
 }
