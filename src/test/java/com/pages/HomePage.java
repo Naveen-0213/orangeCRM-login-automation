@@ -27,14 +27,14 @@ public class HomePage extends ProjectSpecifiMethods {
     ExplicitWaitUtils util;
     Logger log = LogManager.getLogger(HomePage.class);
     //SoftAssert ass=new SoftAssert();
-    protected ExtentTest test;
+   // protected ExtentTest test;
     SoftAssert ass;
     
 
-    public HomePage(WebDriver driver, ExtentTest test) {
+    public HomePage(WebDriver driver) {
         this.driver = driver;
         this.util = new ExplicitWaitUtils(driver);
-        this.test = test;
+       // this.test = test;
         this.ass = new SoftAssert();
     }
 
@@ -50,12 +50,12 @@ public class HomePage extends ProjectSpecifiMethods {
             WebElement checkDash = util.waitForElementVisibleLocated(dashboard, 5);
             ass.assertTrue(checkDash.isDisplayed(), "Login Failed..!");
             log.info("Dashboard Menu Identified. Hence Landed in Home Page");
-            test.info("Dashboard Menu Identified. Hence Landed in Home Page");
+            //test.info("Dashboard Menu Identified. Hence Landed in Home Page");
 
         } catch (Exception e) {
             ass.fail("Login Failed");
             log.info("Login Test Failed - from log");
-            test.info("Login Test Failed -- from extent reports");
+           // test.info("Login Test Failed -- from extent reports");
 
         }
         ass.assertAll();
@@ -73,7 +73,7 @@ public class HomePage extends ProjectSpecifiMethods {
 
 
             log.info("Link in Home Page is: " + link);
-            test.info("Link in Home Page is " + link);
+           // test.info("Link in Home Page is " + link);
             if (!link.isEmpty()) {
                 String status = checkUrlStatus(link);
                 if (status.startsWith("Broken")) {

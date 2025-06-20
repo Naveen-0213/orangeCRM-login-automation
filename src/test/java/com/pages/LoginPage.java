@@ -21,17 +21,17 @@ public class LoginPage {
 	Logger log=LogManager.getLogger(LoginPage.class);
 	//WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
 	ExplicitWaitUtils util;
-	protected ExtentTest test;
+	//protected ExtentTest test;
 	
 	private By userIdInput=By.xpath("//input[@name='username']");
 	private By passInput=By.xpath("//input[@class='oxd-input oxd-input--active']");
 	private By loginButton=By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']");
 				
 	
-	public LoginPage(WebDriver driver, ExtentTest test ) {
+	public LoginPage(WebDriver driver ) {
 		this.driver=driver;
 		this.util=new ExplicitWaitUtils(driver);
-		this.test=test;
+	//	this.test=test;
 		
 	}
 	
@@ -51,7 +51,7 @@ public class LoginPage {
 	
 	public HomePage enterClick() {
 		driver.findElement(loginButton).click();
-		return new HomePage(driver, test);
+		return new HomePage(driver);
 	}
 	
 	
@@ -60,7 +60,7 @@ public class LoginPage {
 		enterPassword(password);
 		enterClick();
 		
-		return new HomePage(driver, test);
+		return new HomePage(driver);
 	}
 	
 	

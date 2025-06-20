@@ -6,7 +6,7 @@
     <artifactId>icici-login-automation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <dependencies>
+       <dependencies>
         <!-- Selenium WebDriver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <version>7.8.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -78,12 +78,26 @@
             <artifactId>log4j-core</artifactId>
             <version>2.20.0</version>
         </dependency>
-
-        <!-- OPTIONAL: Log4j binding for SLF4J (if needed by any libs) -->
+        <!-- Log4j SLF4J 2.x Binding -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
+            <artifactId>log4j-slf4j2-impl</artifactId>
             <version>2.20.0</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

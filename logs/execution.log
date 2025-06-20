@@ -1,39 +1,47 @@
-2025-06-14 20:59:43 INFO  BaseClass:42 - ==== Test Start:testLogin =====
-2025-06-14 20:59:48 INFO  BaseClass:72 - Launched Url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-2025-06-14 20:59:51 INFO  LoginTest:24 - Starting login test for User: Admin
-2025-06-14 20:59:51 INFO  LoginTest:29 - Entered Username
-2025-06-14 20:59:51 INFO  LoginTest:33 - Entered Password
-2025-06-14 20:59:52 INFO  LoginTest:37 - Clicked on Login Button
-2025-06-14 20:59:53 INFO  HomePage:52 - Dashboard Menu Identified. Hence Landed in Home Page
-2025-06-14 20:59:53 INFO  HomePage:75 - Link in Home Page is: https://www.orangehrm.com/
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/admin/viewAdminModule
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/pim/viewPimModule
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/leave/viewLeaveModule
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/time/viewTimeModule
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/recruitment/viewRecruitmentModule
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/pim/viewMyDetails
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/performance/viewPerformanceModule
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/dashboard/index
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/directory/viewDirectory
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/maintenance/viewMaintenanceModule
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/claim/viewClaimModule
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: /web/index.php/buzz/viewBuzz
-2025-06-14 20:59:54 INFO  HomePage:75 - Link in Home Page is: https://orangehrm.com/open-source/upgrade-to-advanced
-2025-06-14 20:59:56 INFO  HomePage:75 - Link in Home Page is: http://www.orangehrm.com
-2025-06-14 20:59:56 INFO  HomePage:92 - Valid Urls in home page: https://www.orangehrm.com/ - OK (HTTP 200)
-2025-06-14 20:59:56 INFO  HomePage:92 - Valid Urls in home page: https://orangehrm.com/open-source/upgrade-to-advanced - OK (HTTP 200)
-2025-06-14 20:59:56 INFO  HomePage:92 - Valid Urls in home page: http://www.orangehrm.com - OK (HTTP 301)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/admin/viewAdminModule - Broken (no protocol: /web/index.php/admin/viewAdminModule)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/pim/viewPimModule - Broken (no protocol: /web/index.php/pim/viewPimModule)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/leave/viewLeaveModule - Broken (no protocol: /web/index.php/leave/viewLeaveModule)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/time/viewTimeModule - Broken (no protocol: /web/index.php/time/viewTimeModule)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/recruitment/viewRecruitmentModule - Broken (no protocol: /web/index.php/recruitment/viewRecruitmentModule)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/pim/viewMyDetails - Broken (no protocol: /web/index.php/pim/viewMyDetails)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/performance/viewPerformanceModule - Broken (no protocol: /web/index.php/performance/viewPerformanceModule)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/dashboard/index - Broken (no protocol: /web/index.php/dashboard/index)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/directory/viewDirectory - Broken (no protocol: /web/index.php/directory/viewDirectory)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/maintenance/viewMaintenanceModule - Broken (no protocol: /web/index.php/maintenance/viewMaintenanceModule)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/claim/viewClaimModule - Broken (no protocol: /web/index.php/claim/viewClaimModule)
-2025-06-14 20:59:56 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/buzz/viewBuzz - Broken (no protocol: /web/index.php/buzz/viewBuzz)
-2025-06-14 20:59:57 INFO  BaseClass:85 - Test passed...!
-2025-06-14 21:00:02 INFO  BaseClass:94 - Test End
+2025-06-19 23:44:16 INFO  BaseClass:54 - === BeforeMethod Start: Method=testLogin, Test=Test, Suite=Suite, Groups=[smoke] ===
+2025-06-19 23:44:16 INFO  BaseClass:65 - Created ExtentTest for method: testLogin
+2025-06-19 23:44:16 INFO  BaseClass:76 - Loaded config.properties successfully: {user1.username=Admin, user2.password=admin1234, browser=chrome, homepagetitle=OrangeHRM, user1.password=admin123, user2.username=Admin, url=https://opensource-demo.orangehrmlive.com/web/index.php/auth/login}
+2025-06-19 23:44:16 INFO  BaseClass:88 - Browser selected: chrome
+2025-06-19 23:44:18 INFO  BaseClass:108 - WebDriver initialized successfully
+2025-06-19 23:44:22 INFO  BaseClass:128 - Launched URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2025-06-19 23:44:25 INFO  BaseClass:141 - === BeforeMethod End: testLogin ===
+2025-06-19 23:44:25 INFO  LoginTest:25 - Starting login test for User: Admin
+2025-06-19 23:44:25 INFO  LoginTest:34 - Entered Username
+2025-06-19 23:44:25 INFO  LoginTest:38 - Entered Password
+2025-06-19 23:44:26 INFO  LoginTest:42 - Clicked on Login Button
+2025-06-19 23:44:26 INFO  HomePage:52 - Dashboard Menu Identified. Hence Landed in Home Page
+2025-06-19 23:44:26 INFO  HomePage:75 - Link in Home Page is: https://www.orangehrm.com/
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/admin/viewAdminModule
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/pim/viewPimModule
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/leave/viewLeaveModule
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/time/viewTimeModule
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/recruitment/viewRecruitmentModule
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/pim/viewMyDetails
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/performance/viewPerformanceModule
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/dashboard/index
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/directory/viewDirectory
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/maintenance/viewMaintenanceModule
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/claim/viewClaimModule
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: /web/index.php/buzz/viewBuzz
+2025-06-19 23:44:32 INFO  HomePage:75 - Link in Home Page is: https://orangehrm.com/open-source/upgrade-to-advanced
+2025-06-19 23:44:33 INFO  HomePage:75 - Link in Home Page is: http://www.orangehrm.com
+2025-06-19 23:44:34 INFO  HomePage:92 - Valid Urls in home page: https://www.orangehrm.com/ - OK (HTTP 200)
+2025-06-19 23:44:34 INFO  HomePage:92 - Valid Urls in home page: https://orangehrm.com/open-source/upgrade-to-advanced - OK (HTTP 200)
+2025-06-19 23:44:34 INFO  HomePage:92 - Valid Urls in home page: http://www.orangehrm.com - OK (HTTP 301)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/admin/viewAdminModule - Broken (no protocol: /web/index.php/admin/viewAdminModule)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/pim/viewPimModule - Broken (no protocol: /web/index.php/pim/viewPimModule)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/leave/viewLeaveModule - Broken (no protocol: /web/index.php/leave/viewLeaveModule)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/time/viewTimeModule - Broken (no protocol: /web/index.php/time/viewTimeModule)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/recruitment/viewRecruitmentModule - Broken (no protocol: /web/index.php/recruitment/viewRecruitmentModule)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/pim/viewMyDetails - Broken (no protocol: /web/index.php/pim/viewMyDetails)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/performance/viewPerformanceModule - Broken (no protocol: /web/index.php/performance/viewPerformanceModule)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/dashboard/index - Broken (no protocol: /web/index.php/dashboard/index)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/directory/viewDirectory - Broken (no protocol: /web/index.php/directory/viewDirectory)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/maintenance/viewMaintenanceModule - Broken (no protocol: /web/index.php/maintenance/viewMaintenanceModule)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/claim/viewClaimModule - Broken (no protocol: /web/index.php/claim/viewClaimModule)
+2025-06-19 23:44:34 INFO  HomePage:101 - Broken Links in Home Page: /web/index.php/buzz/viewBuzz - Broken (no protocol: /web/index.php/buzz/viewBuzz)
+2025-06-19 23:44:34 INFO  BaseClass:146 - === AfterMethod Start: testLogin ===
+2025-06-19 23:44:34 INFO  BaseClass:156 - Test passed!
+2025-06-19 23:44:36 INFO  BaseClass:164 - WebDriver closed
+2025-06-19 23:44:36 INFO  BaseClass:170 - Test End
+2025-06-19 23:44:36 INFO  BaseClass:172 - === AfterMethod End: testLogin ===
