@@ -23,7 +23,7 @@ public class LoginTest extends BaseClass {
     private ExplicitWaitUtils util;
 
     @Test(groups = {"smoke"}, dataProvider = "loginData", dataProviderClass = TestDataProvider.class,
-            invocationCount = 2, timeOut = 20000)
+            invocationCount = 1, timeOut = 10000)
     public void testLogin(String userName, String password) {
         log.info("Starting login test for User: {}", userName);
         if (test == null) {
@@ -54,7 +54,7 @@ public class LoginTest extends BaseClass {
     }
 
     @Test(dataProvider = "invalidLoginData", dataProviderClass = TestDataProvider.class,
-            invocationCount = 1, timeOut = 20000, groups={"reg"})
+            invocationCount = 3, timeOut = 10000, groups={"reg"})
     public void invalidTestInLogin(String userName, String password) {
         log.info("Starting invalid login test for User: {}", userName);
         if (test == null) {
