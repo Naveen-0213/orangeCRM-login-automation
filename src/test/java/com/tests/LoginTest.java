@@ -23,7 +23,7 @@ public class LoginTest extends BaseClass {
     private ExplicitWaitUtils util;
 
     @Test(groups = {"smoke"}, dataProvider = "loginData", dataProviderClass = TestDataProvider.class,
-            invocationCount = 1, timeOut = 20000)
+            invocationCount = 2, timeOut = 20000)
     public void testLogin(String userName, String password) {
         log.info("Starting login test for User: {}", userName);
         if (test == null) {
